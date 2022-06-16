@@ -21,8 +21,8 @@ let operationNo = 0;
 function store(operator){
     selectnumber = document.querySelector('.display');
     console.log(selectnumber.textContent);
-    number3 = selectnumber.textContent;
-    number1 = Math.min(Math.max(parseInt(number3), 1), 1000000000);
+    number1 = selectnumber.textContent;
+    
     
     if (operator == 'add'){operationNo = 1;}
     else if (operator == 'multiply'){operationNo = 2;}
@@ -39,8 +39,8 @@ function equals(){
     selectnumber2 = document.querySelector('.display');
     
     console.log(selectnumber2.textContent);
-    number4 = selectnumber2.textContent;
-    number2 = Math.min(Math.max(parseInt(number4), 1), 1000000000);
+    number2 = selectnumber2.textContent;
+    
     console.log(operationNo);
     if (operationNo == 1){
     answer = Number(number1) + Number(number2);
